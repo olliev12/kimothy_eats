@@ -1,0 +1,21 @@
+<div class="footer-wrapper">
+  <mat-toolbar color="accent">
+    <mat-toolbar-row>
+      <span>back to top</span>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <span class="example-spacer"></span>
+        <a class="bottom-link" *ngFor="let navLink of footerNavLinks"
+          [href]="appGlobal.routeType(navLink)"
+          [routerLink]="appGlobal.routeType(navLink)"
+          (click)="appGlobal.noHref()"
+        >
+          <p class="bottom-link-text">{{navLink.label}}</p>
+        </a>
+      <span class="example-spacer"></span>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <span>Copyright © 2023 kimothyeats.com - All Rights Reserved.</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
