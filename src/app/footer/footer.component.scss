@@ -10,8 +10,12 @@
 .bottom-link {
   padding-left: 10px;
   padding-right: 10px;
-  color: whitesmoke;
+  color: #8f6665;
   font-size: medium;
+}
+
+.mat-toolbar {
+  background-color: #f5e2e4;
 }
 
 @media only screen and (max-width: 767px) {

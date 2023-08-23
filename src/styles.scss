@@ -49,8 +49,25 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   padding: 20px;
   min-height: 100%;
   margin-top: 56px;
+  background-size: cover;
+  background-color: #faf5f7;
+  height: 100vh; /* Adjust the height as needed */
 }
 
+.mat-drawer {
+  background-color: #f5e2e4;
+}
+
+//palette
+//#e5bdc0
+//#f5e2e4
+//#8f6665
+//#c8a29f
+//#dfbaa6
+//#aa887f
+//#f0cfbf
+//#938b8c
+//#bcb5b4
 
 ul.no-bullets {
   list-style-type: none;
