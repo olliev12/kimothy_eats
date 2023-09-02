@@ -10,8 +10,8 @@ import { getWindow } from 'ssr-window';
 })
 export class HeaderComponent {
   readonly headerNavLinks: AppConfig.RouteType[] = AppConfig.headerNavLinks;
-  public menuOpen: boolean = false;
-  public isMobile: boolean = false;
+  public menuOpen = false;
+  public isMobile = false;
 
   constructor(public appGlobal: AppGlobal) {
     this.isMobile = this.isWindowMobile();
@@ -22,8 +22,8 @@ export class HeaderComponent {
     this.appGlobal.toggleMenu();
   }
 
-  @HostListener('window:resize', ['$event'])
-  public checkMobile($event: any) {
+  @HostListener('window:resize')
+  public checkMobile() {
     this.isMobile = this.isWindowMobile();
   }
 
